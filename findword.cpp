@@ -140,6 +140,71 @@ for (int k=0;k<length_word;k++) {
     periksa=k;
   }else {break;}
 }
+//1817051031 livia ayu istoria hernani
+            if(periksa==length_word-1)
+            {
+              word_finded+=1;
+            }
+            else
+            {
+              word_finded+=0;
+            }
+            periksa=0;
+            
+            for(int k=0;k<length_word;k++)
+            {
+              if(input[k]==table[z+k][p-k])
+              {
+                periksa=k;
+              }
+              else
+              {
+                break;
+              }
+            }
+            if(periksa==length_word-1)
+            {
+              word_finded+=1;
+            }
+            else
+            {
+              word_finded+=0;
+            }
+            periksa=0;
+            for (int k=0;k<length_word;k++)
+            {
+              if(input[k]==table[z+k][p+k])
+              {
+                periksa=k;
+              }
+              else
+              {
+                break;
+              }
+            }
+            if (periksa==length_word-1)
+            {
+              word_finded+=1;
+            }
+            else
+            {
+              word_finded+=0;
+            }
+            periksa=0;
+          }
+  }
+}
+if(word_finded>0){
+  cout<<"Status Keberadaan : ADA\n\n";
+}
+else
+{
+  cout<<"Status Keberadaan : TIDAK ADA\n\n";
+}
+}
+}
+
+             
             
             
                   
