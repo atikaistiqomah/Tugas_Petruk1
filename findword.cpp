@@ -4,13 +4,13 @@
 using namespace std; 
 int main () {
   
-  int periksa;                                                                                //Deklarasi variabel untuk mengecek keberadaan kata
-  int cari;                                                                                   //Deklarasi variabel untuk banyaknya kata yang akan diinputkan
+  int periksa;                                                                               //Deklarasi variabel untuk mengecek keberadaan kata
+  int cari;                                                                                  //Deklarasi variabel untuk banyaknya kata yang akan diinputkan
   int length_word;
-  char input[200];                                                                            //Deklarasi variabel string dengan batas karakter sebanyak 200
+  char input[200];                                                                           //Deklarasi variabel string dengan batas karakter sebanyak 200
   int word_finded=0;
-  cout<<"\t\t\t\t\t\t===Selamat Datan di Finder Word==="<<endl;endl;
-  char table[15][15] = {{'t','g','b','w','w','i','n','t','e','r','w','s','e','s','n'},        //Tampilan Papan Tabel
+  cout<<"\t\t\t\t\t\t===Selamat Datang di Finder Word==="<<endl<<endl;
+  char table[15][15] = {{'t','g','b','w','w','i','n','t','e','r','w','s','e','s','n'},       //Tampilan Papan Tabel
                         {'a','a','u','n','t','t','m','m','h','f','o','o','d','n','b'},
                         {'j','l','w','c','q','l','d','z','m','p','m','v','d','m','r'},
                         {'a','s','a','g','m','q','u','w','v','v','b','s','o','h','i'},
@@ -33,3 +33,40 @@ int main () {
     }
     cout<<endl;
   }
+  cout<<endl;
+  cout<<"Cari berapa kali : ";
+  cin>>cari;
+  for(int i=0;i<cari;i++)                                                                    
+      {                                                                                      //Perulangan dalam banyaknya kata yang diinputkan
+      cout<<"Masukkan kata : ";
+      cin>>input;
+      length_word = strlen(input);
+    
+          for (int z=0;z<15;z++)
+          {
+              for (int p=0;p<15;p++)
+              {
+                  if (input[0]==table[z][p])
+                  {
+                      for (int k=0;k<length_word;k++)
+                      }
+                          if (input[k]==table[z][p+k])
+                          {
+                          periksa=k;
+                          }
+                  else
+                          {
+                          break;
+                          }
+                
+                    }
+                if (periksa==length_word-1)
+                    {
+                        word_finded+=1;
+                    }
+                else
+                    {
+                     word_finded+=0;
+                    }
+                    periksa=0;
+                  
