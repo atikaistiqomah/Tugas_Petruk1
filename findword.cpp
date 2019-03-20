@@ -69,4 +69,45 @@ int main () {
                      word_finded+=0;
                     }
                     periksa=0;
+ //1817051007 anisa raden
+                      for(int k=0;k<length_word;k++)
+                      {
+                        if(input[k]==table[z][p-k])
+                        {
+                          peiksa=k;
+                        }
+                        else
+                        {
+                          break;
+                        }
+                      }
+            if(periksa==length_word-1)
+            {
+              word_finded+=1;
+            }
+            else
+            {
+              word_finded+=0;
+            }
+            periksa=0;
+            for(int k=0;k<length_word;k++)
+            {
+              if(input[k]==table[z+k][p])
+              {
+                periksa=k;
+              }
+              else
+              {
+                break;
+              }
+            }
+            if(periksa==length_word-1)
+            {
+              word_finded+=1;
+            }
+            else
+            {
+              word_finded+=0;
+            }
+            periksa=0;
                   
