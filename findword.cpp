@@ -49,7 +49,7 @@ int main () {
                   if (input[0]==table[z][p])
                   {
                       for (int k=0;k<length_word;k++)
-                      }
+                      {
                           if (input[k]==table[z][p+k])
                           {
                           periksa=k;
