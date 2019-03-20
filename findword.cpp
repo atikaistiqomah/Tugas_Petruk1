@@ -24,7 +24,7 @@ int main () {
                         {'l','q','z','q','n','n','m','r','z','j','j','s','c','l','g'},
                         {'m','o','s','g','z','c','z','d','t','d','b','o','o','t','o'},
                         {'p','d','c','r','z','m','s','n','g','r','d','n','r','p','z'},
-                        {'o','h','n','k','z','w','a','t','e','r','j','g','t','r','a'}},
+                        {'o','h','n','k','z','w','a','t','e','r','j','g','t','r','a'}};
   for(int x=0;x<15;x++)
   {
     for(int y=0;y<15;y++)
@@ -69,12 +69,13 @@ int main () {
                      word_finded+=0;
                     }
                     periksa=0;
+            
  //1817051007 anisa raden
                       for(int k=0;k<length_word;k++)
                       {
                         if(input[k]==table[z][p-k])
                         {
-                          peiksa=k;
+                          periksa=k;
                         }
                         else
                         {
@@ -110,4 +111,35 @@ int main () {
               word_finded+=0;
             }
             periksa=0;
+            
+//1817051004 Atika Istiqomah
+for (int k=0;k<length_word;k++) {
+  if (input[k]==table[z-k][z]) {
+    periksa=k;
+  } else {break;}
+}
+if (periksa==length_word-1) {
+  word_finded+=1;
+  } else {word_finded+=0;}
+
+periksa=0;
+            
+for (int k=0;k<length_word;k++) {
+  if (input[k]==table[z-k][p-k]) {
+    periksa=k;
+  } else {break;}
+}
+if (periksa==length_word-1) {
+  word_finded+=1;
+  } else {word_finded+=0;}
+
+periksa=0;
+            
+for (int k=0;k<length_word;k++) {
+  if (input[k]==table[z-k][p+k]) {
+    periksa=k;
+  }else {break;}
+}
+            
+            
                   
